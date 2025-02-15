@@ -1,0 +1,267 @@
+*{
+    margin: opx;
+    padding: opx;
+    box-sizing: border-box;
+
+    font-family: "Noto Sans", serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative; /* set this to make the changes for child when they apply absolute*/
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-left: 100px;
+}
+.logo{
+    width: 130px;
+}
+.list-items{
+    list-style: none; /* remove bullet lines*/
+    display: inline; /* every thing changes to row from column*/
+    margin: 0px 20px;
+}
+.links{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.links:hover{
+    color: red; 
+    text-decoration: underline;/* u need the already defineclass for this */
+
+}
+.homecotent{
+    margin: 13% 0px 0px 8%;
+}
+
+#username{
+    font-size: 50px;
+    margin-bottom: 20px; 
+    font-family: "Dancing Script", serif;  
+    /* font-family: "Barlow", serif;   */
+}
+#lname{
+    font-family: "Dancing Script", serif;  
+color: rgb(235, 185, 92);
+}
+#userdetails{
+    line-height: 1.2;
+}
+#download{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block; /* this is for to prevent the overlapping caused by applying padding over inline element */
+    margin-top: 30px;
+}
+.homeimage{
+    width: 45%;
+    height: 75%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+.group1{
+    position:absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%; /* this is given to the hover property*/
+    transform: translateX(-50%); /* use this to hide the left 50% which is given */
+    transition: bottom 2s,left 1s;
+
+}
+
+.homeimage:hover #shape{
+
+    bottom: 70px;
+}
+
+.homeimage:hover #girl{
+    left: 30%;
+}
+
+#about{
+    margin: 15% 8% 0px 8%;
+
+}
+.sectionhead{
+
+ text-align: center;
+}
+.mainhead{
+    margin-bottom:-6px;
+    font-size: 30px;
+}
+.subhead{
+    
+    font-size: 20px;
+    color:rgb(100, 177, 125);
+}
+.aboutbody{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:50px;
+    align-items: center;
+}
+.img1{
+    width: 70%;
+}
+.aboutcontent{
+    font-size: 20px;
+    text-align: justify;
+}
+.infobox{
+    margin-bottom: 10px;
+}
+.infobox>span{
+    margin-left: 10px;
+}
+
+#skills{
+    margin: 9% 8% 0px 8px;
+}
+.skillcontent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+    margin-top: 20px;
+}
+.bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0px;
+}
+
+.barhead, .barpercent{
+    font-size: 1.1rem;
+    font-weight: 500px;
+}
+.basebar{
+   width: 100%;
+   height: 0.5rem;
+   background-color: black;
+   border-radius: 10px;
+   position: absolute;
+   bottom: 0px;
+
+}
+.htmlbar{
+    width: 89%;
+    background-color: rgb(199, 199, 54);
+}
+
+.cssbar{
+    width: 81%;
+    background-color: rgb(199, 199, 54);
+}
+.JSbar{
+    width: 80%;
+    background-color: rgb(199, 199, 54);
+}
+.reactbar{
+    width: 79%;
+    background-color: rgb(199, 199, 54);
+}
+#contact{
+    margin: 8% 8%;
+}
+.iconCollection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    
+   }
+   .icon{
+    width: 50px;
+    height: 50px;
+    /* border: solid; */
+    border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0px 10px
+     
+   }
+
+   .brands{
+    color: black;
+    font-size: 30px;
+
+
+   }
+   .icon:hover{
+    background-image: linear-gradient(to bottom right,rgb(107, 0, 128),brown);
+    
+   }
+   .icon :hover .brands{
+    color: blanchedalmond;
+    animation: rotate 2s;
+   }
+   @keyframes rotate {
+    0%{
+        transform: rotate(40deg);
+    }
+    20%{
+        transform: rotate(-40deg);
+    }
+    40%{
+        transform: rotate(40deg);
+    }
+    60%{
+        transform: rotate(-40deg);
+    }
+    80%{
+        transform: rotate(40deg);
+    }
+    100%{
+        transform: rotate(-40deg);
+    }
+    
+   }
+   footer{
+    margin: 8% 0px 0px 0px;
+   }
+   #copyright{
+    text-align: center;
+   }
+
+.uparrow{
+    float: right;
+    margin-top: -44px;
+}
+
+  html{
+    scroll-behavior: smooth;  /* this is for the smooth behaviour of the line once u click the data */
+  }
+  
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: azure;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(231, 231, 133);
+    border-radius: 10px;
+    
+}
+
+
+
+
+
+
