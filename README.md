@@ -1,1 +1,2 @@
-porfolio-febniv.netlify.app
+https://porfolio-febniv.netlify.app/
+ 
